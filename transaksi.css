@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(28, 24, 24);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  header nav ul li a:hover {
+    color: #41b9f1;
+  }
+  
+  /* Main container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Section */
+.transaction-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form h2 {
+  text-align: center;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.transaction-form .form-group {
+  margin-bottom: 20px;
+}
+
+.transaction-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.transaction-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.transaction-form button:hover {
+  background-color: #2563eb;
+}
+
+.transaction-form p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.transaction-form p a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.transaction-form p a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transaction-form {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .transaction-form button {
+    padding: 10px;
+  }
+}

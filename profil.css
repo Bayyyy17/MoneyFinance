@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(28, 24, 24);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  header nav ul li a:hover {
+    color: #41b9f1;
+  }
+ /* Kontainer utama */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling untuk judul besar dan deskripsi aplikasi */
+.app-description {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.app-description h1 {
+    font-size: 2.5em;
+    color: #2196F3;
+    margin-bottom: 20px;
+}
+
+.app-description p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Fitur utama */
+.app-features {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.app-features h2 {
+    font-size: 2.5em;
+    color: #2196F3;
+    margin-bottom: 40px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Tim pengembang */
+.team-section {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5em;
+    color: #2196F3;
+    margin-bottom: 40px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.4em;
+    color: #2196F3;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Styling untuk bagian kontak */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    color: #2196F3;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.contact-details h3 {
+    font-size: 1.4em;
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #666;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-details p a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details p a:hover {
+    text-decoration: underline;
+}
+
+.contact-details p:hover {
+    background-color: #f0f0f0;
+}
+
+/* Efek hover untuk ikon */
+.contact-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Responsif untuk perangkat kecil (mobile/tablet) */
+@media screen and (max-width: 768px) {
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-details p {
+        font-size: 1em;
+    }
+}
+footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+  }
+
+/* Responsif untuk perangkat kecil (mobile/tablet) */
+@media screen and (max-width: 768px) {
+    /* Deskripsi aplikasi */
+    .app-description h1 {
+        font-size: 2em;
+    }
+
+    .app-description p {
+        font-size: 1em;
+    }
+
+    /* Fitur utama */
+    .features-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* Tim pengembang */
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* Kontak */
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}

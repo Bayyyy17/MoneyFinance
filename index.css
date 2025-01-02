@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f4f4f9;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(28, 24, 24);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+  color: #41b9f1;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #3b82f6;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #191b1e;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Steps Section */
+.steps {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 220px;
+  margin: 10px;
+  text-align: center;
+}
+
+.step img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Features Section */
+.features {
+  background-color: #f9fafb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+/* Call to Action (CTA) Section */
+.cta {
+  background-color: #2563eb;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  background-color: #fff;
+  color: #191a1d;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+footer {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .step {
+    width: 45%;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta h2 {
+    font-size: 24px;
+  }
+}

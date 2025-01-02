@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(28, 24, 24);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  header nav ul li a:hover {
+    color: #41b9f1;
+  }
+  .register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-container h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2196F3;
+  }
+  
+  .register-form .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .register-form label {
+    font-size: 1.1em;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .register-form input[type="text"]:focus,
+  .register-form input[type="email"]:focus,
+  .register-form input[type="password"]:focus {
+    border-color: #2196F3;
+  }
+  
+  .register-form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form .btn:hover {
+    background-color: #1976D2;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link p {
+    font-size: 1em;
+  }
+  
+  .login-link a {
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    color: #FFEB3B;
+  }
+  
+  /* Error Messages */
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+  }
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .register-container {
+      width: 80%;
+      margin: 30px auto;
+    }
+  
+    .register-container h2 {
+      font-size: 1.8em;
+    }
+  
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"],
+    .register-form .btn {
+      font-size: 1em;
+    }
+  }

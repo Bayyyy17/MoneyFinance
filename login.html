@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Finance</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <img src="MY_COPERAS-removebg-preview.png" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="login-container">
+      <h2>Login ke Akun Anda</h2>
+      <form id="loginForm" class="login-form" onsubmit="return validateLoginForm()">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Masukkan Username" required>
+          <span id="usernameError" class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
+          <span id="passwordError" class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <button type="submit" class="btn">Login</button>
+        </div>
+        <div class="signup-link">
+          <p>Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Money Finance | All Rights Reserved</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>
